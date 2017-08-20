@@ -7,7 +7,7 @@ export default function(state = [], action) {
   switch(action.type) {
     case FETCH_WEATHER:
       // return state.concat([ action.payload.data ]);
-      return [ action.payload.data, ...state ]; // equivalent to [ city, city, city ] NOT [ city, [ city, city ]]
+      return [ action.payload.data, ...state ]; // equivalent to [ payload.data, payload.data, payload.data ] NOT [ payload.data, [ payload.data, payload.data ]]
   }
 
   return state;

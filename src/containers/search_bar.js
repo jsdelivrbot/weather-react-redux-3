@@ -11,6 +11,7 @@ class SearchBar extends Component {
       term: ''
     };
 
+    // All state functions need to be binded with the right context
     this.onInputChange = this.onInputChange.bind(this);
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
